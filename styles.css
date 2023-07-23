@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f6f5ea;
+    color: #3b271c;
+    line-height: 1.6;
+    font-size: 18px;
+    padding: 20px;
+}
+
+a {
+    color: #3b271c;
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #f6f5ea;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    background: #f6f5ea;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #3b271c;
+}
+
+h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #0e918c;
+    color: #f6f5ea;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #3b271c;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    background: #f6f5ea;
+    border-top: 1px solid #ddd;
+}
+
+.applications {
+    background: #f6f5ea;
+    color: #3b271c;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.app-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.app-card {
+    background: #3b271c;
+    color: #f6f5ea;
+    padding: 15px;
+    border-radius: 5px;
+    width: calc(33% - 20px);
+    height: 150px;
+    box-sizing: content-box;
+    transition: all 0.5s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.app-card:hover {
+    height: 250;
+    width: auto;
+}
+
+.app-desc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 15px;
+    box-sizing: content-box;
+    text-align: left;
+}
+
+.app-card:hover .app-desc {
+    opacity: 1;
+}
